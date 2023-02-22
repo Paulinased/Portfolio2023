@@ -24,6 +24,8 @@ img {
   list-style: none;
   display: flex;
   gap: 3rem;
+  margin: 0;
+  padding: 0;
 }
 .menu_link {
   color: white;
@@ -37,14 +39,13 @@ img {
 .hero {
   background-color: black;
   display: grid;
+  grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
 }
 .hero_inner {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 6rem;
+  grid-column: inner;
+  margin-top: 6rem;
 }
 .hero_presentation {
   color: white;
@@ -76,6 +77,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
+  max-width: 1280px;
 }
 .header .name {
   color: #FF0000;
@@ -85,11 +87,10 @@ img {
 .about {
   background-color: #F5F5F5;
   display: grid;
+  grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
 }
 .about_inner {
-  width: 100%;
-  margin: 0 auto;
-  padding: 6rem;
+  grid-column: inner;
 }
 .about_title {
   color: black;
@@ -102,11 +103,6 @@ img {
   color: black;
   font-weight: 500;
   font-size: 1.3rem;
-}
-.about_lists {
-  display: flex;
-  justify-content: left;
-  align-items: left;
 }
 .about_item_positive {
   list-style: none;

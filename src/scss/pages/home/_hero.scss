@@ -1,15 +1,13 @@
 .hero {
     background-color: black;
     display: grid;
+    grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr); // Gör så att allt innehåll kan aligna längst en rak linje
 
     &_inner {
-        width: 100%;
-        margin: 0 auto;
         display: flex;
-        justify-content: center;
         align-items: center;
-        padding: 6rem;
-        //grid-column: inner;
+        grid-column: inner;
+        margin-top: 6rem;
     }
 
     &_presentation {
@@ -17,7 +15,6 @@
         font-weight: 500;
         font-size: 2rem;
         min-width: 500px;
-        //margin-left: 10rem;
         border-left: 3px solid #FF0000; // top right bottom left
         padding-left: 1.1rem;
 
