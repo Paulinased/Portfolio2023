@@ -88,21 +88,29 @@ img {
   background-color: #F5F5F5;
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
+  padding-top: 4rem;
 }
 .about_inner {
   grid-column: inner;
+}
+.about ul {
+  margin: 0;
+  padding: 0;
 }
 .about_title {
   color: black;
   border-bottom: 3px solid #FF0000;
   font-weight: bolder;
   font-size: 2.7rem;
-  width: 190px;
+  width: 189px;
 }
 .about_intro {
   color: black;
   font-weight: 500;
   font-size: 1.3rem;
+}
+.about_lists {
+  display: flex;
 }
 .about_item_positive {
   list-style: none;
@@ -113,6 +121,7 @@ img {
   list-style: none;
   font-size: 21px;
   padding: 0.4rem;
+  margin-left: 4rem;
 }
 .about_icon {
   max-width: 25px;
@@ -123,6 +132,95 @@ img {
   max-width: 18px;
   max-height: 18px;
   margin-right: 10px;
+}
+
+.projects {
+  background-color: #F5F5F5;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+.projects_inner {
+  grid-column: inner;
+}
+.projects_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 7rem;
+}
+.projects_title {
+  color: black;
+  border-bottom: 3px solid #FF0000;
+  font-weight: bolder;
+  font-size: 2.7rem;
+  width: 152px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+.project_image {
+  min-width: 400px;
+  min-height: 300px;
+}
+.project figure {
+  margin: 0;
+  padding: 0;
+}
+.project_title {
+  font-size: 1.5rem;
+}
+.project_content {
+  font-size: 18px;
+}
+.project_readmore {
+  color: #FF0000;
+  font-weight: bolder;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.contact {
+  background-color: black;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
+  padding-top: 4rem;
+}
+.contact_inner {
+  grid-column: inner;
+}
+.contact_title {
+  color: white;
+  border-bottom: 3px solid #FF0000;
+  font-weight: bolder;
+  font-size: 2.7rem;
+  width: 147px;
+}
+.contact_number_email {
+  color: white;
+  font-size: 1.3rem;
+}
+.contact_icons {
+  max-width: 100px;
+  padding-bottom: 16px;
+}
+.contact_content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+.footer_content {
+  color: #FF0000;
 }
 
 /*# sourceMappingURL=style.css.map */
