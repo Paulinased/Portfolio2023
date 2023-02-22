@@ -1,0 +1,34 @@
+.hero {
+    background-color: black;
+    display: grid;
+
+    &_inner {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6rem;
+        //grid-column: inner;
+    }
+
+    &_presentation {
+        color: white;
+        font-weight: 500;
+        font-size: 2rem;
+        min-width: 500px;
+        //margin-left: 10rem;
+        border-left: 3px solid #FF0000; // top right bottom left
+        padding-left: 1.1rem;
+
+        span {
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+
+    }
+
+    &_photo {
+        max-width: 600px;
+    }
+}
