@@ -15,7 +15,7 @@
         font-weight: 500;
         font-size: 2rem;
         min-width: 500px;
-        border-left: 3px solid #FF0000; // top right bottom left
+        border-left: 3.5px solid #FF0000; // top right bottom left
         padding-left: 1.1rem;
 
         span {
@@ -28,4 +28,40 @@
     &_photo {
         max-width: 600px;
     }
+}
+
+.triangle {
+    position: relative;
+    height: 200px;
+    background-color: #F5F5F5;
+}
+
+.triangle::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 1080px 0 1080px; //top right bottom left
+    border-color: black transparent transparent transparent;
+}
+
+.triangle2 {
+    position: relative;
+    height: 200px;
+    background-color: black;
+}
+
+.triangle2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 1080px 0 1080px; //top right bottom left
+    border-color: #F5F5F5 transparent transparent transparent;
 }
