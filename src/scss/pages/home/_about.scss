@@ -2,7 +2,7 @@
     background-color: #F5F5F5;
     display: grid;
     grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
-    padding-top: 4rem;
+    //padding-top: 4rem;
 
     &_inner {      
         grid-column: inner;
@@ -52,11 +52,16 @@
         max-width: 25px;
         max-height: 25px;
         margin-right: 10px;
+        vertical-align: middle; // Centrerar ikonen tillsammans med margin
+        margin-bottom: 8px;
     }
 
     &_icon2 {
         max-width: 18px;
         max-height: 18px;
         margin-right: 10px;
+        vertical-align: middle;
+        margin-bottom: 6px;
     }
+
 }
